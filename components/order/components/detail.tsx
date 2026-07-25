@@ -207,7 +207,7 @@ export default function Detail({
                     x <span>{item.quantity}</span>
                   </span>
                   <span>
-                    ${(item.product.sellprice * item.quantity).toFixed(2)}
+                    GH₵ {(item.product.sellprice * item.quantity).toFixed(2)}
                   </span>
                 </li>
               ))}
@@ -218,15 +218,15 @@ export default function Detail({
             <ul className="grid gap-3">
               <li className="flex items-center justify-between">
                 <span className="text-muted-foreground">Subtotal</span>
-                <span>${subtotal.toFixed(2)}</span>
+                <span>GH₵ {subtotal.toFixed(2)}</span>
               </li>
               <li className="flex items-center justify-between">
                 <span className="text-muted-foreground">Tax</span>
-                <span>${tax.toFixed(2)}</span>
+                <span>GH₵ {tax.toFixed(2)}</span>
               </li>
               <li className="flex items-center justify-between font-semibold">
                 <span className="text-muted-foreground">Total</span>
-                <span>${total.toFixed(2)}</span>
+                <span>GH₵ {total.toFixed(2)}</span>
               </li>
             </ul>
           </div>

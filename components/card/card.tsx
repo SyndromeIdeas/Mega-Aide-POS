@@ -88,7 +88,7 @@ function DashboardCard(): React.ReactNode {
           className="border border-green-700 px-2 py-0.5 mt-4"
         >
           <p className="text-green-400">
-            <span className="mr-1">$</span>
+            <span className="mr-1">GH₵</span>
             {totalAmount ?? 'Loading...'}
           </p>
         </Badge>

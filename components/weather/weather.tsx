@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { toast } from 'react-toastify';
+
 
 function WeatherComponent(): React.ReactNode {
   // State variables to store weather data and icon URL
@@ -70,10 +70,7 @@ function WeatherComponent(): React.ReactNode {
         const iconCode = data.weather[0].icon;
         setIconUrl(`http://openweathermap.org/img/wn/${iconCode}.png`);
       })
-      .catch((error) => {
-        // Handle errors
-        toast.error(`${error.message}`);
-      });
+      .catch(() => {});
   }, [apiKey]);
 
   // Display skeleton loading animation if weather data is not available yet

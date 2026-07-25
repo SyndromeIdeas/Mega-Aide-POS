@@ -5,7 +5,8 @@ interface RootLayoutProps {
   children: React.ReactNode;
 }
 import Link from 'next/link';
-import { Menu, TriangleAlert } from 'lucide-react';
+import { Menu } from 'lucide-react';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetTrigger } from '@/components/ui/sheet';
 import { ModeToggle } from '@/components/darkmode/darkmode';
@@ -67,7 +68,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
           <div className="flex h-full max-h-screen flex-col gap-2">
             <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
               <Link href="/" className="flex items-center gap-2 font-semibold">
-                <TriangleAlert className="h-6 w-6" />
+                <Image src="/icons/favicon.png" alt="Logo" width={32} height={32} className="rounded" />
                 <span className="">{storeName} Inc</span>
               </Link>
             </div>

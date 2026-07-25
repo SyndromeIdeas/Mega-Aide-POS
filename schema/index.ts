@@ -14,11 +14,11 @@ export const productSchema = z
     buyPrice: z
       .number()
       .positive('Buy price must be a positive number')
-      .min(0.05, 'Buy price min $0.05 '),
+      .min(0.05, 'Buy price min GH₵ 0.05 '),
     sellPrice: z
       .number()
       .positive('Sell price must be a positive number')
-      .min(0.01, 'Sell price min $0.01'),
+      .min(0.01, 'Sell price min GH₵ 0.01'),
     stockProduct: z
       .number()
       .positive('Buy price must be a positive number')

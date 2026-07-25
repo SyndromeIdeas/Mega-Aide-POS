@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { TriangleAlert } from 'lucide-react';
+import Image from 'next/image';
 import { ScrollAreaDemo } from '../scrollarea/scrollarea';
 import { SheetContent } from '@/components/ui/sheet';
 import { NAVBAR_ITEMS } from '@/constant/navbarMenu';
@@ -21,7 +22,7 @@ export function NavbarSheet() {
             href="#"
             className="flex items-center gap-2 text-lg font-semibold"
           >
-            <TriangleAlert className="h-6 w-6" />
+            <Image src="/icons/favicon.png" alt="Logo" width={32} height={32} className="rounded" />
           </Link>
 
           {/* Map through NAVBAR_ITEMS to create navigation links */}

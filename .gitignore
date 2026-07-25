@@ -26,7 +26,15 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env*.local
+
+# scripts
+generate-icons.js
+
+# prisma generated
+prisma/fake-data.ts
+prisma/dbml/
 
 # vercel
 .vercel
